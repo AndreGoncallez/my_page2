@@ -1,6 +1,6 @@
-# 🌐 PrimeOps.tech
+# 🌐 PrimeOps
 
-Bem-vindo ao **PrimeOps.tech** 🚀  
+Bem-vindo ao **PrimeOps** 🚀  
 Este é o site oficial da marca, com foco em **Cloud, Segurança, Redes e Automação**.  
 O projeto foi desenvolvido em **HTML, CSS e JavaScript** de forma responsiva, priorizando acessibilidade e performance.  
 
