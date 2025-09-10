@@ -1,212 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PrimeOps Tech - Segurança, Cloud e Infra</title>
-  <style>
-    /* Fundo gradiente animado */
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #f1f1f1;
-      background: linear-gradient(-45deg, #0a0a0f, #1b1b2f, #162447, #1f4068);
-      background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
-    }
-
-    @keyframes gradientBG {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
-    }
-
-    header {
-      text-align: center;
-      padding: 4rem 2rem;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      color: #00d4ff;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      color: #cfcfcf;
-    }
-
-    .btn {
-      display: inline-block;
-      margin: 1rem;
-      padding: 0.8rem 1.6rem;
-      background: #00d4ff;
-      color: #000;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background: #00a3cc;
-    }
-
-    /* Sobre mim */
-    .sobre {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      padding: 3rem 2rem;
-      gap: 2rem;
-    }
-
-    .sobre img {
-      width: 280px;
-      height: auto;
-      border-radius: 16px;
-      box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
-    }
-
-    .sobre-texto {
-      max-width: 600px;
-    }
-
-    .sobre-texto h2 {
-      color: #00d4ff;
-      margin-bottom: 1rem;
-    }
-
-    /* Serviços */
-    .servicos {
-      text-align: center;
-      padding: 3rem 2rem;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.05);
-      padding: 1.5rem;
-      border-radius: 16px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-      transition: transform 0.3s ease;
-    }
-    .card:hover {
-      transform: translateY(-8px);
-    }
-
-    .card h3 {
-      color: #00d4ff;
-      margin-bottom: 0.8rem;
-    }
-
-    /* Rodapé */
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-
-    /* Botão alternar modo */
-    #toggleView {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #00d4ff;
-      color: #000;
-      border: none;
-      padding: 0.8rem 1.2rem;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-      box-shadow: 0 0 15px rgba(0, 212, 255, 0.6);
-    }
-
-    /* Ocultar conteúdo extra inicialmente */
-    .extra {
-      display: none;
-    }
-
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrimeOps.tech</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
 </head>
 <body>
-  <header>
-    <h1>PrimeOps Tech 🚀</h1>
-    <p>Segurança, Cloud e Infraestrutura ao seu alcance</p>
-    <a href="https://wa.me/55SEUNUMERO" target="_blank" class="btn">Fale no WhatsApp</a>
-    <a href="https://youtube.com/@primeops" target="_blank" class="btn">Canal no YouTube</a>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="assets/logo.png" alt="PrimeOps Logo">
+      <h1>PrimeOps.tech</h1>
+    </div>
+    <nav class="nav">
+      <a href="#hero">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+      <button id="toggleView" class="btn small">Alternar Visualização</button>
+    </nav>
   </header>
 
-  <section class="sobre">
-    <img src="A_digital_photograph_features_a_portrait_of_André_.png" alt="Foto André Goncallez">
-    <div class="sobre-texto">
-      <h2>Sobre Mim</h2>
-      <p>Sou André Goncallez, especialista em Redes, Cloud e Segurança. Atuo em infraestrutura física e lógica, cibersegurança e DevSecOps. Através da PrimeOps.Tech, compartilho conteúdo técnico, laboratórios práticos e consultoria em TI para empresas que buscam eficiência e segurança.</p>
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h2>Tecnologia ao Alcance de Todos</h2>
+        <p>Consultoria em TI, Cloud e Segurança. Soluções inteligentes para empresas modernas.</p>
+        <div class="hero-buttons">
+          <a href="https://wa.me/55XXXXXXXXXX" target="_blank" class="btn primary">Falar no WhatsApp</a>
+          <a href="https://youtube.com/@primeops" target="_blank" class="btn">YouTube</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/andre.png" alt="Foto de André Gonçallez">
+      </div>
     </div>
   </section>
 
-  <section class="servicos">
+  <!-- Sobre -->
+  <section id="sobre" class="sobre">
+    <h2>Sobre</h2>
+    <p>Com mais de 20 anos de experiência, atuamos em redes, cibersegurança, automação e soluções em nuvem.</p>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="servicos">
     <h2>Serviços</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Infraestrutura</h3>
-        <p>Redes cabeadas, fibra óptica, switches e reestruturação de ambientes.</p>
-      </div>
-      <div class="card">
-        <h3>Cibersegurança</h3>
-        <p>Runbooks de incidentes, SIEM/SOAR e práticas de DevSecOps.</p>
-      </div>
-      <div class="card">
-        <h3>Cloud</h3>
-        <p>Projetos em Google Cloud e AWS com foco em segurança e observabilidade.</p>
-      </div>
-      <div class="card">
-        <h3>Treinamentos</h3>
-        <p>Workshops práticos em TI, redes e automação de ambientes.</p>
-      </div>
+    <div class="grid">
+      <div class="card"><img src="assets/network.png"><h3>Redes</h3></div>
+      <div class="card"><img src="assets/security.png"><h3>Segurança</h3></div>
+      <div class="card"><img src="assets/cloud.png"><h3>Cloud</h3></div>
+      <div class="card"><img src="assets/automation.png"><h3>Automação</h3></div>
     </div>
   </section>
 
-  <!-- Conteúdo extra para modo Página Web -->
-  <section class="extra">
-    <div class="servicos">
-      <h2>Certificações</h2>
-      <p>LPIC-1, CCNA Enterprise, CyberOps Associate, GCP ACE e muito mais.</p>
-    </div>
-
-    <div class="servicos">
-      <h2>Projetos</h2>
-      <p>Confira no meu GitHub: <a href="https://github.com/andre-goncallez" target="_blank">GitHub/andre-goncallez</a></p>
-    </div>
+  <!-- Contato -->
+  <section id="contato" class="contato">
+    <h2>Contato</h2>
+    <p>Email: contato@primeops.tech</p>
+    <p>WhatsApp: +55 (XX) XXXXX-XXXX</p>
   </section>
 
-  <footer>
-    <p>© 2025 PrimeOps.Tech - Todos os direitos reservados</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 PrimeOps.tech - Todos os direitos reservados.</p>
   </footer>
 
-  <button id="toggleView">Ver Página Completa</button>
-
-  <script>
-    const toggleBtn = document.getElementById("toggleView");
-    const extraSections = document.querySelectorAll(".extra");
-    let isLanding = true;
-
-    toggleBtn.addEventListener("click", () => {
-      isLanding = !isLanding;
-      extraSections.forEach(sec => {
-        sec.style.display = isLanding ? "none" : "block";
-      });
-      toggleBtn.textContent = isLanding ? "Ver Página Completa" : "Ver Landing Page";
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
+
